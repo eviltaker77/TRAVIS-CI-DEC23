@@ -1,24 +1,12 @@
 language: csharp
 mono: none
 sudo: required
-dist: focal
+dist: xenial
 dotnet: 6.0.202
 branches:
   only:
-    - main
+    - master
 #    - develop
-# Specify the version of Python to use
-
-before_install:
-  # Set the CLOUDSDK_PYTHON environment variable to use Python 3.8
-  - sudo rm -rf /var/lib/apt/lists/*
-  # Install the required dependencies for the Google Cloud SDK
-  - sudo apt-get update
-  - sudo apt-get install -y curl python3.8
-  - export CLOUDSDK_PYTHON=python3.8
-  # Download and install the Google Cloud SDK
-  - curl https://sdk.cloud.google.com | CLOUDSDK_CORE_DISABLE_PROMPTS=1 bash
-
 script:
   - dotnet build
   - dotnet test
@@ -29,7 +17,7 @@ deploy:
   skip_cleanup: true
   keyfile: polyglot-travis-ci-lzo.json
   project: polyglot-travis-ci-lzo
-  version: polyglot
+  version: service-demo
   default: true
   on:
     all_branches: true
