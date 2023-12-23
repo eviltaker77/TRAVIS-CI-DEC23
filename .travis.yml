@@ -6,7 +6,18 @@ dotnet: 6.0.202
 branches:
   only:
     - master
-#    - develop
+
+before_install:
+  - sudo rm -rf /var/lib/apt/lists/*
+  - sudo apt-get update
+  - sudo apt-get install -y python3.8
+  - which python3.8
+  - python3.8 --version
+  - export CLOUDSDK_PYTHON=python3.8
+  - curl https://sdk.cloud.google.com | CLOUDSDK_CORE_DISABLE_PROMPTS=1 bash
+  - source $HOME/google-cloud-sdk/path.bash.inc
+  - gcloud components update --quiet
+
 script:
   - dotnet build
   - dotnet test
