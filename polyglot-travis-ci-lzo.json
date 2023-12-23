@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "polyglot-travis-ci-lzo",
+  "private_key_id": "3354995fac49e232a4c9cdf9c37fe6b1c63aafbe",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC3HagUyh43/U1d\n0tLSmb3CC5qJggOzGP+IvxymtfQp8CxtvET6vi4aPdcQ0Jbc4qBK38s2KJEX5TFG\npx38h4UOCTuppugcwFghcRu6S1nd8nM9XqgpBm9DzY19zi3Mb6Uhn7XLrJ21DoL+\nvwSzQd2RgJJsfmivDo5kDTaVWNH7VniT4bgVvMS9m9T9x6+pW8pfGVE104Lc3zB9\n7XPlei5FGICCgGC9mselFq9mOTf32Ly9wymORdR6x7hsQ26Wxr2wqezyIVu+/C+B\n7iWjoaT0CERhw8Y96jWHs/Xln4t1q9+aG8v6tPATHh6r2SOCVeATxjd+L7koiA58\nz3FejXo9AgMBAAECggEAF9pkH7kocJCteFBTKB3gyxsp2Um3Y6gY+V4zxD+le6UO\nlIjWz3bgmIh/sHALhuB6kuZOGVL1e5Bed96jGFcq7OYlAHd+euhPUqPiQcU5AqFn\ng5IGA7oT2lg3WzD1ZFESyKt+SfbFYGVwiPCnExa8XwzJhhp9Vnhl8gCKoK++QqgL\nVPT/WYVoSz9ByDZhPFhEzd4mcr0JAKlRe4jxoU5uXdOZDhGAmaRh4CmaseT7zkC4\n2K7V4Z2oKs7uGP0bhBGmkAYZ1Afz8yW0O5FjJoH8W9HzTWIq1GGqWwOL5bvoBsic\nSTJ2ViFHzGKFOZHMl4p6/ju7Mu/Ur9+A5arlgDyeXQKBgQDr/aPmmxSAw3f7jwU1\ndj48xImZaR5QsjYl+4sxro4rjCb9V59BjJUcF8Pb2VoLcPiqj/MiX6A7BCThFDcV\nw2xIoxJzUEMTVT5dHdzbKpWHgJVFtpv5CvxMKeyqxnoJG6/tWc7H8j5X1lmV1Qsh\nRupfBa2jm/4h+Q/IIBpr8OM07wKBgQDGpFNW/wcXIHJx19RlbUZ7KFeDPE4rAkIP\nnIy+1V87Htc3nCdr7JeSaBCt123r7XID7EUzZlEaLyTWkRPbzdSqcJ6Gyu1d8NgE\n6TjDLJN7G0cetvx+aAWMoDPwfgBsHEBnoGMZqn7A2Zc8VtlWyRtczylMKhJqTbia\nppn/bU07kwKBgBn1b5cJTgsP9V3FkLQdyqDSmbQ3XO9ReyVYcypG4jqmEw/hGJKU\nTT6m2pOPaBlEFwZkCUGptS1ouknL+Hc7ZOjkjz4CAS7aPJ7vjwDIwWQDX+goOyX8\n8F3Mas0qQfhIhGSecWGLIxJ0cKxLoArMCzHipQQPP7gq9nJ0HZPsDoIfAoGAHR8q\nOK7a00EmhhomQVhr5NJdQhgtPZDvLmq9F50ggQJcewKhpOjir8wh5dqXeucst/aD\njq2JZlVTCUHrr2XVr8ci9o/5jLQqd03ZzINUe8/b9VzOV5nYdm1mL/PJDBB4QLj6\nzmB4hL1htq7k3hxNrqWQYGIqoPsT/Vg/a3sSv5ECgYAI1rYOuPAqtGLZ23lqBTmM\naTl/6sY7tPGhKgxMP28+1aEhiWUhng3N6wTBttwKrhxlHzJknpaI8H3LAZ2yE9Ut\n/5nFlz37SF6cyvaJuzf/ywG+xOhSUPJuJKNybnjuFHcnPxr998gzem8m7TEAf3FX\nmAsP24UJMqGuwMu2yN73kQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "sa-polyglot@polyglot-travis-ci-lzo.iam.gserviceaccount.com",
+  "client_id": "117622387417348059902",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sa-polyglot%40polyglot-travis-ci-lzo.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
