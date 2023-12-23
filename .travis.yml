@@ -1,0 +1,36 @@
+language: csharp
+mono: none
+sudo: required
+dist: focal
+dotnet: 6.0.202
+branches:
+  only:
+    - master
+#    - develop
+# Specify the version of Python to use
+
+before_install:
+  # Set the CLOUDSDK_PYTHON environment variable to use Python 3.8
+  - sudo rm -rf /var/lib/apt/lists/*
+  # Install the required dependencies for the Google Cloud SDK
+  - sudo apt-get update
+  - sudo apt-get install -y curl python3.8
+  - export CLOUDSDK_PYTHON=python3.8
+  # Download and install the Google Cloud SDK
+  - curl https://sdk.cloud.google.com | CLOUDSDK_CORE_DISABLE_PROMPTS=1 bash
+
+script:
+  - dotnet build
+  - dotnet test
+# [START travis_deploy]
+deploy:
+    provider: gae
+    # Skip cleanup so api_key.py and vendored dependencies are still there    
+    skip_cleanup: true
+    keyfile: travis-net6-a23-c98189410a2b.json
+    project: travis-ci-oct
+    version: polyglot
+    default: true
+    on:
+        all_branches: true
+# [END travis_deploy]

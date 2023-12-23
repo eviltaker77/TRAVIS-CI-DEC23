@@ -1,0 +1,23 @@
+language: csharp
+mono: none
+sudo: required
+dist: focal
+dotnet: 6.0.202
+branches:
+  only:
+    - master
+#    - develop
+#script:
+#  - dotnet build
+#  - dotnet test
+before_script:
+  - chmod -R a+x scripts
+script:
+  - ./scripts/build.sh
+  - ./scripts/test.sh
+after_success:
+  - ./scripts/dockerize.sh
+notifications:
+  email:
+    on_success: always
+    on_failure: always
