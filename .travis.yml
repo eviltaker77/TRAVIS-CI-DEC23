@@ -5,7 +5,7 @@ dist: xenial
 dotnet: 6.0.202
 branches:
   only:
-    - master
+    - main
 
 before_install:
   - sudo rm -rf /var/lib/apt/lists/*
